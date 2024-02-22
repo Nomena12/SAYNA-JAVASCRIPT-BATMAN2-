@@ -1,0 +1,178 @@
+*{margin: 0%;
+    padding:0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;}
+    
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    
+    @font-face {
+        font-family: "Rajdhani" ;
+        src: url(police/Rajdhani-Medium.ttf);
+    }
+
+    :root {
+        --yellow-color: #ff0;
+        --blue-color: #1100ff;
+        --white-color: #fff;
+        --black-color: #000;
+
+    }
+     
+    html {
+        background-color: var(--black-color);
+        color: var(--white-color);
+    }
+
+    h1 {
+        font-family: "Rajdhani" ;
+        font-size: 36px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    
+    button {
+        font-family: "Rajdhani" ;
+        font-size: 20px;
+        font-weight: 400;
+        width: 150px;
+        height: 50px;
+        
+    
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    nav{display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul{list-style-type: none;}
+    nav li{float: right;
+    width: 9%;
+    text-align: center;
+    padding: 50px;}
+    
+    nav a{
+    color: var(--white-color)}
+    
+    nav a:hover{color: #ecbf83;
+    }
+    
+    nav ul::after{content:"";
+    display: table;
+    clear: both;}
+    
+    
+     
+    body{padding: 30px; ;}
+    
+    
+    body {background-color:black ;
+    color: white;
+    font-family: "Space-Grotesk";
+    font-weight: 300 ;}
+    
+    button:hover {background-color: #cce4f1; color: rgb(156, 137, 108);}
+    button {padding: 20px;  font-size: medium;}
+
+    /* css de la tete */
+
+.hero {
+    background-image: url(Illustrations/Batgame_1.png);
+    background-repeat: no-repeat;
+    background-color: aqua;
+    background-size: cover;
+    height: 800px;
+    padding-top: 350px;
+}
+
+.poto {
+    text-align: center;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: "Space-Grotesk";
+    margin-top: 10px;
+}
+
+
+.fraise{
+    margin-top: 25px;
+    align-items: center;
+    padding-right: 55px;
+    opacity: 0.4;
+}
+.btn2,.btn1 {
+    margin-left: 35px;
+    width: 170px;
+    color: white;
+    border: none;
+    
+    
+}
+
+.btn2 a:link, .btn1 a:link {
+    text-decoration-color: #fff;
+    
+font-size:small;
+}
+/*
+.asideOut{
+    position: relative;
+    border: 2px solid rgb(238, 255, 0);
+} */
+
+.asideInOut1 {
+    position: relative;
+    height: 300px;
+   
+    margin-bottom: 200px;
+
+}
+
+.asideInOut2 {
+    position: relative;
+    height: 300px;
+   
+    
+
+}
+
+.asideIn1 {
+    position: relative;
+    top: 0px;
+    right: 40px;
+}
+
+.asideIn2 {
+    
+    position: relative;
+    bottom: 0px;
+    right: 40px;
+    
+}
+
+aside {
+    
+    height: 300px;
+    width: 50px;
+    position:absolute;
+    right: 80px;
+    top: 400px;
+    line-height: 50px;
+    padding-top: 80px;
+    
+}
+
+img[class="lougo"]:hover, img[class="arrow"]:hover  {
+    filter: opacity(0.4) drop-shadow(0 0 0 #fbff00f5);
+}
+
+.down{
+    text-align: center;
+    margin-top: 180px;
+}
