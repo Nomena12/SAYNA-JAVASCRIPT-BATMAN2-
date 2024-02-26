@@ -209,6 +209,8 @@ button[type="button"] {
     height: 60px;
     width: 320px;
     margin:  0px 0px 0px 520px;
+    color: white;
+    background: linear-gradient(to right ,rgb(23, 50, 92),rgb(245, 173, 80));
 }
 
 main {
