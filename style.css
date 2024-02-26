@@ -23,12 +23,7 @@
         color: var(--white-color);
     }
 
-    h1 {
-        font-family: "Rajdhani" ;
-        font-size: 36px;
-        font-weight: 400;
-        padding-bottom: 20px;
-    }
+    
     
     button {
         font-family: "Rajdhani" ;
@@ -89,10 +84,7 @@
     padding-top: 350px;
 }
 
-.poto {
-    text-align: center;
-    line-height: 1.5;
-}
+
 
 h2 {
     font-family: "Space-Grotesk";
@@ -174,5 +166,88 @@ img[class="lougo"]:hover, img[class="arrow"]:hover  {
 
 .down{
     text-align: center;
-    margin-top: 180px;
+    margin-top: 370px;
+    margin-bottom: 200px;
+}
+/* css news */
+ h1[class="poto"] {
+    font-size:40px;
+    line-height: 55px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.choco{
+    
+    position: relative;
+    
+}
+
+.batg2{
+    
+    height: 500px;
+    width: 900px;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+
+h1[class="poto2"] {
+    text-align: center;
+    font-size: 30px;
+}
+
+img[alt="batgame2"]{
+  width: 100%;
+  height: 100%; 
+  
+  
+}
+
+button[type="button"] {
+    height: 60px;
+    width: 320px;
+    margin:  0px 0px 0px 520px;
+}
+
+main {
+    height: 1700px;
+    margin-bottom: 200px;
+}
+
+/* CSS FOOTER */
+
+footer{
+    
+    padding-left: 80px;
+}
+
+.ft1 p {
+    font-size: x-small;
+}
+
+.ft1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ftout{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ft2{
+    margin-right: 50px;
+    word-spacing: 10px;
+    
+}
+
+
+.ft3{
+    word-spacing: 10px;
+    
 }
