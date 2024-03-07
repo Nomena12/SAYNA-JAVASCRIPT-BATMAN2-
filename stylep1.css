@@ -254,3 +254,33 @@ footer{
     
 }
 
+/* CSS PAGE 1 -FICHIER GAME */
+
+.out {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 900px;
+    
+}
+
+.incheck{
+    margin-bottom: 10px;
+    height: 40px ;
+    width: 450px;
+    padding-top: 5px;
+    font-size: 20px;
+    background-color: rgb(148, 143, 143);
+}
+
+.sphx{
+    margin-top: 30px;
+}
+
+
+
+input.larger{
+    width:26px ;
+    height: 26px ;
+}
