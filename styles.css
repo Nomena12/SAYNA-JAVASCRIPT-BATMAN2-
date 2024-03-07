@@ -112,7 +112,22 @@ h2 {
     color: white;
     border: none;
     
+    background: linear-gradient(
+        70deg,
+        rgba(237, 222, 191, 0.4)40%,
+        rgba(137, 0, 8, 0.4)60%) ;
+
+    box-shadow: black 5px 5px 60px;
+
     
+}
+
+.btn1:hover, .btn2:hover{
+    background: linear-gradient(
+        80deg,
+        rgba(237, 222, 191, 1)40%,
+        rgba(237, 0, 8, 1)60%
+    );
 }
 
 .btn2 a:link, .btn1 a:link {
@@ -379,5 +394,74 @@ button .btn4 {
     opacity: 0.9;
     padding: 100px;
     width: 170px;
+}
+
+/* CSS footer */
+
+div[class="citation"]{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+
+.above{
+    margin-bottom: 20px;
+}
+.under{
+   
+    font-size: small;
+    color: rgb(208, 208, 250);
+}
+
+blockquote{
+position: absolute;
+left: 450px;
+}
+
+
+.aboveout{
+    position: absolute;
+    top: 80px;
+    left: 250px;
+}
+
+.underout{
+    position: absolute;
+    bottom: 80px;
+    right: 250px;
+}
+
+.ft1 p {
+    font-size: x-small;
+}
+
+.ft1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ftout{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ft2{
+    margin-right: 50px;
+    word-spacing: 10px;
+    
+}
+
+
+.ft3{
+    word-spacing: 10px;
+    
 }
 
