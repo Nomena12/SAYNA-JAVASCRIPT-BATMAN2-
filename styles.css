@@ -10,6 +10,30 @@ box-sizing: border-box;}
     src: url(police/Rajdhani-Medium.ttf);
 }
 
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+
+
 
 
 :root {
@@ -38,8 +62,11 @@ button {
 }
 
 .container {
+    -webkit-animation: fadeInRight 1500ms ease-in-out ;
+    animation: fadeInRight 1500ms ease-in-out;
     width: 80%;
     margin: 0 auto;
+
 }
 
 nav{display: flex;
@@ -464,4 +491,33 @@ left: 450px;
     word-spacing: 10px;
     
 }
+
+/*
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+
+
+-webkit-animation: fadeInRight 1500ms ease-in-out;
+           animation: fadeInRight 1500ms ease-in-out;
 
