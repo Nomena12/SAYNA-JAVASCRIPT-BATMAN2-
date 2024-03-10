@@ -32,6 +32,29 @@ box-sizing: border-box;}
     }
 }
 
+@-webkit-keyframes fadeIn {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+
+
 
 
 
@@ -67,6 +90,11 @@ button {
     width: 80%;
     margin: 0 auto;
 
+}
+
+.fade {
+    -webkit-animation: fadeIn 1500ms ease-in-out;
+    animation: fadeIn 1500ms ease-in-out;
 }
 
 nav{display: flex;
@@ -141,8 +169,8 @@ h2 {
     
     background: linear-gradient(
         70deg,
-        rgba(237, 222, 191, 0.4)40%,
-        rgba(137, 0, 8, 0.4)60%) ;
+        rgba(237, 222, 191, 0.8)40%,
+        rgba(137, 0, 8, 0.8)60%) ;
 
     box-shadow: black 5px 5px 60px;
 
@@ -217,6 +245,10 @@ img[class="lougo"]:hover, img[class="arrow"]:hover  {
 .down{
     text-align: center;
     margin-top: 180px;
+}
+
+a[href="#batManCinema"], a[href="#nemesis"] {
+color: var(--white-color);
 }
 
 
@@ -367,6 +399,10 @@ form {
     
 }
 
+form p {
+    color: gray;
+}
+
 .formul {
    
     height: 700px;
@@ -382,7 +418,13 @@ form h1 {
 
 .btn6 {
     margin: 0 40px 0 40px;
-    opacity: 0.4;
+    opacity: 0.8;
+    background: inherit;
+    color: gray;
+    background: inherit;
+    border: 3px solid   ;
+    
+
 }
   
 
@@ -397,22 +439,36 @@ form h1 {
 }
 
 #email {
-    background: linear-gradient(to right bottom,rgba(237, 222, 191,0.8),rgba(25, 88, 125,0.8)) ;
+    background: inherit/*linear-gradient(to right bottom,rgba(237, 222, 191,0.8),rgba(25, 88, 125,0.8))*/ ;
     width: 800px;
+    border-top: none ;
+    border-right-style:none ;
+    border-left:none ;
+    color: var(--white-color);
    
     border-bottom:2px solid white ;
     
 }
 
 input[name="commentaire"] {
-    background: linear-gradient(to right bottom,rgba(237, 222, 191,0.8),rgba(25, 88, 125,0.8)) ;
+    background: inherit /*linear-gradient(to right bottom,rgba(237, 222, 191,0.8),rgba(25, 88, 125,0.8))*/ ;
     width: 800px;
-    
+    border-top: none ;
+    border-right-style:none ;
+    border-left:none ;
+    color: var(--white-color);
+
     border-bottom:2px solid white ;
 }
 
 .btn8  , .btn7 {
-    opacity: 0.4;
+    opacity: 0.6;
+    color: gray;
+    background: inherit;
+    border: 3px solid   ;
+    
+     
+
     
     
 }
@@ -421,6 +477,11 @@ button .btn4 {
     opacity: 0.9;
     padding: 100px;
     width: 170px;
+}
+
+a[class="rohy"]{
+color: var(--white-color) ;
+text-decoration: none;
 }
 
 /* CSS footer */
