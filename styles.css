@@ -95,7 +95,11 @@ button {
 .fade {
     -webkit-animation: fadeIn 1500ms ease-in-out;
     animation: fadeIn 1500ms ease-in-out;
+    width: 80%;
+    margin: 0 auto;
 }
+
+
 
 nav{display: flex;
     align-items: center;
@@ -312,6 +316,8 @@ figcaption {
 */
 
 .sary {
+    -webkit-animation: fadeIn 1500ms ease-in-out;
+    animation: fadeIn 1500ms ease-in-out;
     margin: 50px 0 50px 0;
     display: flex;
     flex-direction: row;
