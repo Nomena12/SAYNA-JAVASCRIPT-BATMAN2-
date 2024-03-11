@@ -467,6 +467,14 @@ input[name="commentaire"] {
     border-bottom:2px solid white ;
 }
 
+input:valid{
+    border: 2px solid white;
+}
+
+input:invalid{
+    border: 2px solid rgb(255, 0, 0);
+}
+
 .btn8  , .btn7 {
     opacity: 0.6;
     color: gray;
