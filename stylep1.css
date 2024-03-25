@@ -168,6 +168,7 @@ img[class="lougo"]:hover, img[class="arrow"]:hover  {
     text-align: center;
     margin-top: 370px;
     margin-bottom: 200px;
+    color: white;
 }
 /* css news */
  h1[class="poto"] {
@@ -255,6 +256,13 @@ footer{
 }
 
 /* CSS PAGE 1 -FICHIER GAME */
+
+
+a[href="numPage"] {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: xx-large;
+}
 
 .out {
     margin-bottom: 100px;

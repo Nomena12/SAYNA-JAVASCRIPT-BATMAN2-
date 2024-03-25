@@ -8,3 +8,18 @@ window.addEventListener('scroll', (e)=>{
    
 
 });
+
+let a = 3;
+
+
+        
+            const btn = document.querySelector("button");
+            btn.addEventListener("click",()=>{
+    if(a < 21){
+        a+=1;
+
+    const img = document.querySelector('img[alt="Batgame3"]');
+    img.setAttribute("src",`Illustrations/Batgame_${a}.png`);
+    }else{a = 21}                       
+        });
+

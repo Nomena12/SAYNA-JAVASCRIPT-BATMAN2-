@@ -250,6 +250,12 @@ main {
     margin-bottom: 200px;
 }
 
+a[href="gamep1.html#quest1"] {
+    color: var(--white-color);
+    text-decoration: none;
+    
+}
+
 /* CSS FOOTER */
 
 footer{
