@@ -169,7 +169,10 @@ img[class="lougo"]:hover, img[class="arrow"]:hover  {
     margin-top: 370px;
     margin-bottom: 200px;
     color: white;
+    font-size: xx-large;
 }
+
+
 /* css news */
  h1[class="poto"] {
     font-size:40px;
@@ -265,12 +268,20 @@ a[href="numPage"] {
 }
 
 .out {
+    border: 2px solid var(--white-color);
     margin-bottom: 100px;
     margin-left: 300px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
     width: 900px;
     
+}
+
+.Question-box {
+    position: absolute;
+    top: 0;
+    right: 190px;
 }
 
 .incheck{
@@ -291,4 +302,23 @@ a[href="numPage"] {
 input.larger{
     width:26px ;
     height: 26px ;
+}
+
+/* CSS PAGE 2 -FICHIER GAME */
+
+.out1 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+    /*display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.Question-box {
+    position: absolute;
+    top: 0;
+    right: 190px;
 }
