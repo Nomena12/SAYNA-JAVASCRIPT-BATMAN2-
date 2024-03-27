@@ -317,8 +317,83 @@ input.larger{
     
 }
 
+.out2 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out3 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out4 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out5 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.autreImg {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    height: 300px;
+    position: relative;
+}
+
+img[alt="Batgame9-1"]{
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+}
+
+img[alt="Batgame9"]{
+    position: absolute;
+    left: 0px;
+    top: 250px
+}
+
+.out6 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
 .Question-box {
     position: absolute;
     top: 0;
-    right: 190px;
+    right: 120px;
 }
