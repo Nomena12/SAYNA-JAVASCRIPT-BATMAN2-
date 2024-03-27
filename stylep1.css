@@ -369,13 +369,13 @@ input.larger{
     position: relative;
 }
 
-img[alt="Batgame9-1"]{
+img[alt="Batgame9-1"],img[alt="Batgame13"]{
     position: absolute;
     right: 0px;
     bottom: 50px;
 }
 
-img[alt="Batgame9"]{
+img[alt="Batgame9"],img[alt="Batgame13-1"]{
     position: absolute;
     left: 0px;
     top: 250px
@@ -392,8 +392,129 @@ img[alt="Batgame9"]{
     
 }
 
+.out7 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out8 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out9 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+/*.autreImg1 {
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    height: 300px;
+    position: absolute;
+}*/
+
+img[alt="Batgame15"]{
+    position: absolute;
+    right: 130px;
+    bottom: 280px;
+}
+
+img[alt="Batgame16"]{
+    position: absolute;
+    right: 130px;
+    top: 250px
+}
+
+.out10 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out11 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out12 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out13 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
+.out14 {
+    margin-bottom: 100px;
+    margin-left: 300px;
+    position: relative;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    width: 900px;
+    display: none;
+    
+}
+
 .Question-box {
     position: absolute;
     top: 0;
-    right: 120px;
+    right: 100px;
+}
+
+.Question-box1 {
+    position: absolute;
+    top: 0;
+    right: 3px;
+}
+
+.Question-box2 {
+    position: absolute;
+    top: 0;
+    right: 60px;
 }

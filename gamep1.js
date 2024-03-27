@@ -71,6 +71,83 @@ let totQuest = 15;
                                 box5.style.display = "none";
                                 box6.style.display = "block";
 
+                                btn.addEventListener("click",()=>{
+                                    const box6 = document.querySelector(".out6");
+                                    const box7 = document.querySelector(".out7");
+                                    box6.style.display = "none";
+                                    box7.style.display = "block";
+
+                                    btn.addEventListener("click",()=>{
+                                        const box7 = document.querySelector(".out7");
+                                        const box8 = document.querySelector(".out8");
+                                        box7.style.display = "none";
+                                        box8.style.display = "block";
+
+                                        btn.addEventListener("click",()=>{
+                                            const box8 = document.querySelector(".out8");
+                                            const box9 = document.querySelector(".out9");
+                                            box8.style.display = "none";
+                                            box9.style.display = "block"; 
+
+
+                                            btn.addEventListener("click",()=>{
+                                                const box9 = document.querySelector(".out9");
+                                                const box10 = document.querySelector(".out10");
+                                                box9.style.display = "none";
+                                                box10.style.display = "block"; 
+
+                                                btn.addEventListener("click",()=>{
+                                                    const box10 = document.querySelector(".out10");
+                                                    const box11 = document.querySelector(".out11");
+                                                    box10.style.display = "none";
+                                                    box11.style.display = "block";
+
+                                                    btn.addEventListener("click",()=>{
+                                                        const box11 = document.querySelector(".out11");
+                                                        const box12 = document.querySelector(".out12");
+                                                        box11.style.display = "none";
+                                                        box12.style.display = "block"; 
+
+                                                        btn.addEventListener("click",()=>{
+                                                            const box12 = document.querySelector(".out12");
+                                                            const box13 = document.querySelector(".out13");
+                                                            box12.style.display = "none";
+                                                            box13.style.display = "block";
+
+                                                            btn.addEventListener("click",()=>{
+                                                                const box13 = document.querySelector(".out13");
+                                                                const box14 = document.querySelector(".out14");
+                                                                box13.style.display = "none";
+                                                                box14.style.display = "block"; 
+                                                            
+                                                            });
+                                                            
+                                                            
+                                                        
+                                                        });
+    
+
+
+
+                                                    
+                                                    });
+                                                    
+                                                    
+
+                                                
+                                                });
+                                            
+                                            });
+                                        
+                                        
+                                        });
+                                    
+                                    
+                                    });
+
+                                    
+                                });
+
                             });
                             
 
