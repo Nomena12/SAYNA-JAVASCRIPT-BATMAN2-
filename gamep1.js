@@ -171,25 +171,7 @@ n += 1
 
 
 
-    async function populate(){
-
-
-
-        const requestURL = 'https://nomena12.github.io/test2.json';
-        const request = new Request(requestURL);
-      
-        const response = await fetch(request);
-        const superHeroes = await response.json();
-        populateOut(superHeroes);
-
-        
-    };
-       
-   function populateOut(fanontaniana){
-    const out = document.querySelector(".out div h2");
-    out.textContent = `${fanontaniana[0].questions}`;
-   };
-
+    
       
 
         
