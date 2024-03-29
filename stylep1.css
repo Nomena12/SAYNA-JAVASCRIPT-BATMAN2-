@@ -267,7 +267,7 @@ a[href="numPage"] {
     font-size: xx-large;
 }
 
-.out {
+.out0 {
     border: 2px solid var(--white-color);
     margin-bottom: 100px;
     margin-left: 300px;
@@ -284,7 +284,7 @@ a[href="numPage"] {
     right: 190px;
 }
 
-.incheck{
+.incheck1, .incheck2, .incheck3, .incheck4, .incheck0{
     margin-bottom: 10px;
     height: 40px ;
     width: 450px;

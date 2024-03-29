@@ -3,13 +3,37 @@
 
     const img = document.querySelector('img[alt="Batgame3"]');
     img.setAttribute("src",`Illustrations/Batgame_${a}.png`);
-    }else{a = 21} ; */
+    }else{a = 21} ; 
+    
+    for (let x = 0; x < 15; x++) {
+                for (let y = 0; y < 3; y++) {
+                    const cocher = document.querySelector(`.out${x} .inckeck${y} input`);
+                    if (cocher){
+                        const ans1 = document.querySelector(`.out${x} .incheck${y} label`);
+                        const valid = quiz.fanontaniana[x].reponses[y].isGood;
+                        if(valid === true){
+                            score += 1;
+
+                        };
+                        
+
+                    };
+                    
+                    
+                };
+                
+            };
+
+    */
 
     //let n = 6;
       //  const para = document.querySelector(".down");
       //  div.textContent = n;
 
 //let a = 3;
+ // const label = document.querySelector(".out .incheck1 label");
+       // label.textContent = quiz.fanontaniana[0].reponses[0].text;
+
 
 
 
@@ -25,16 +49,61 @@ window.addEventListener('scroll', (e)=>{
 });
 
 
+$(document).ready(function(){
+    $.ajax({
+        url : "https://nomena12.github.io/test2.json",
+        datatype : "json",
+        success : function(quiz){
+         
+
+          for  (let a = 0; a < 15 ; a++){
+            for (let b = 0; b < 3; b++) {
+                const ans = document.querySelector(`.out${a} .incheck${b} label`);
+                ans.textContent = quiz.fanontaniana[a].reponses[b].text;
+                
+            };
+
+            
+            
+
+            const out1 = document.querySelector(`.out${a} div h2`);
+            out1.textContent = quiz.fanontaniana[a].questions;
+            
+        };
+        
+       
+
+
+        },
+        error : function(){
+            console.log("misy blem");
+        }
+
+    })
+});
+
+
+
+
+
+
 let n = 1 ;
 let totQuest = 15;
+let score = 0;
+let total = `${score}/15`;
         
             const btn = document.querySelector("button");
             btn.addEventListener("click",()=>{
+
+                
+
                 
                 
+           
+
   
 
-    const box = document.querySelector(".out");
+    const box = document.querySelector(".out0");
     const box1 = document.querySelector(".out1");
     box.style.display = "none";
     box1.style.display = "block";
@@ -169,24 +238,4 @@ n += 1
     
         });
 
-
-$(document).ready(function(){
-    $.ajax({
-        url : "https://nomena12.github.io/test2.json",
-        datatype : "json",
-        success : function(quiz){
-            const out = document.querySelector(".out div h2");
-            out.textContent = quiz.fanontaniana[0].questions;
-        },
-        error : function(){
-            console.log("misy blem");
-        }
-
-    })
-});
-    
-      
-
-        
-        
-        
+console.log(total);
