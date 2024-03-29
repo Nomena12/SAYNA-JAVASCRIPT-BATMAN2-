@@ -170,7 +170,20 @@ n += 1
         });
 
 
+$(document).ready(function(){
+    $.ajax({
+        url : "https://nomena12.github.io/test2.json",
+        datatype : "json",
+        success : function(quiz){
+            const out = document.querySelector(".out div h2");
+            out.textContent = quiz.fanontaniana[0].questions;
+        },
+        error : function(){
+            console.log("misy blem");
+        }
 
+    })
+});
     
       
 
