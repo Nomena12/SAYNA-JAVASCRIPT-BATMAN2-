@@ -76,7 +76,7 @@ $(document).ready(function(){
             
         };
         
-        const btn = document.querySelector("button");
+        const btn = document.querySelector('button[type="button"]');
         btn.addEventListener("click",()=>{
             
                 for (let x = 0; x < quiz.fanontaniana[m].reponses.length; x++) {
@@ -190,6 +190,32 @@ box1.style.display = "block";
                                                             const box14 = document.querySelector(".out14");
                                                             box13.style.display = "none";
                                                             box14.style.display = "block"; 
+
+                                                            const lien = document.querySelector(`button a`);
+                                                            lien.textContent = "VOIR LE RESULTAT"
+
+                                                            btn.addEventListener("click",()=>{
+                                                                const box14 = document.querySelector(".out14");
+                                                                const box15 = document.querySelector(".modal");
+                                                                box14.style.display = "none";
+                                                                box15.style.display = "block"; 
+    
+                                                                const btn1 = document.querySelector('button[type="button"]');
+                                                                btn1.style.visibility = "hidden";
+
+                                                                const titre = document.querySelector(".pop");
+                                                                const para = document.querySelector(".pop1");
+
+                                                                if(score <= (totQuest/3)) {
+                                                                    const titre = document.querySelector(".pop");
+                                                                    const para = document.querySelector(".pop1");
+                                                                    titre.textContent = `${score}/15`;
+                                                                    para.textContent = "";
+
+
+                                                                }
+                                                            
+                                                            });
                                                         
                                                         });
                                                         

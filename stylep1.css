@@ -518,3 +518,45 @@ img[alt="Batgame16"]{
     top: 0;
     right: 60px;
 }
+
+/* pop-up box */
+
+.modal {
+    background: rgb(0, 0, 0);
+    width: 700px ;
+    height:450px ;
+    margin-left: 300px;
+    position: relative;
+    display: none;
+}
+
+.content{
+    border: 2px solid white;
+    background: linear-gradient(to right ,rgba(0, 0, 0, 0),rgba(255, 115, 0, 0.438)) ;
+    width: 600px ;
+    height: 400px;
+    position: absolute;
+    left: 55px;
+    top: 20px ;
+    
+}
+
+button[type="submit"]{
+    width: fit-content;
+    bottom: 0px;
+    margin-left: 180px;
+    background: linear-gradient(to right ,rgb(23, 50, 92),rgb(245, 173, 80));
+
+}
+
+.pop {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+ .pop1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
