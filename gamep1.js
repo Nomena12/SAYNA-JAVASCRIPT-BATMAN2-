@@ -78,22 +78,33 @@ $(document).ready(function(){
         
         const btn = document.querySelector('button[type="button"]');
         btn.addEventListener("click",()=>{
+           /* if(m < 15){
+                m += 1;
+            } */
             
                 for (let x = 0; x < quiz.fanontaniana[m].reponses.length; x++) {
                   const divout = document.querySelector(`.incheck${x} input[type="checkbox"]`);
-                  if(divout.checked === true){
+                  if(divout.checked ){
                     const valid = quiz.fanontaniana[m].reponses[x].isGood;
+                    console.log(valid);
                     if(valid === true){
                         score +=1;
+                        m +=1;
                         console.log(score);
+                        console.log(m);
 
+
+                    }else{
+                        m += 1;
+                        console.log(m);
+                    
                     };
 
                   };
                   
                   
                     
-                }
+                };
                 
             
 
@@ -203,16 +214,31 @@ box1.style.display = "block";
                                                                 const btn1 = document.querySelector('button[type="button"]');
                                                                 btn1.style.visibility = "hidden";
 
-                                                                const titre = document.querySelector(".pop");
-                                                                const para = document.querySelector(".pop1");
+                                                                
 
                                                                 if(score <= (totQuest/3)) {
                                                                     const titre = document.querySelector(".pop");
                                                                     const para = document.querySelector(".pop1");
-                                                                    titre.textContent = `${score}/15`;
-                                                                    para.textContent = "";
+                                                                    console.log(titre);
+                                                                    titre.textContent = `${score}/${totQuest} C'EST PAS TOUT A FAIT CA...`;
+                                                                    para.textContent = "Oula ! Heuresement que le riddler est sous les verrous...Il faut que vous vous repassiez les films, cette fois en enlevant peut etre le masque qui vous a bloque la vue ! Aller, rien n'est perdu ! ";
 
 
+                                                                }else{
+                                                                    if(score <= (totQuest/2)){
+                                                                        const titre = document.querySelector(".pop");
+                                                                        const para = document.querySelector(".pop1");
+                                                                        console.log(titre);
+                                                                        titre.textContent = `${score}/${totQuest} PAS MAL !`;
+                                                                        para.textContent = "Encore un peu d'entrainement avec le Chevalier Noir vous serait benefique, mais vous pouvez marcher la tete haute vos connaissances sont la, A vous de les consolider, foncer Gotham est votre terrain de chasse !";
+                                                                        
+                                                                    }else{
+                                                                        const titre = document.querySelector(".pop");
+                                                                        const para = document.querySelector(".pop1");
+                                                                        console.log(titre);
+                                                                        titre.textContent = `${score}/${totQuest} BRAVO!`;
+                                                                        para.textContent = "Vous etes veritablement un superfan de l'univers Batman ! Comics, films, rien ne vous echappe. Bruce wayne a de quoi etre fier, Gotham est en paix et Batman peut prendre sa retraite, vous veillez aux gains !";
+                                                                    }
                                                                 }
                                                             
                                                             });
@@ -260,9 +286,7 @@ n += 1
  const para = document.querySelector(".down");
  para.textContent = n +`/${totQuest}`;}else{n = 15}
 
-if(m < 15){
-    m += 1;
-}
+
 
 
 
