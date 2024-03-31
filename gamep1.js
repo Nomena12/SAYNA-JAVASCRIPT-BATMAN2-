@@ -78,14 +78,13 @@ $(document).ready(function(){
         
         const btn = document.querySelector('button[type="button"]');
         btn.addEventListener("click",()=>{
-           /* if(m < 15){
-                m += 1;
-            } */
+           
             
-                for (let x = 0; x < quiz.fanontaniana[m].reponses.length; x++) {
+                for (let x = 0; x < quiz.fanontaniana[m].reponses.length ; x++) {
                   const divout = document.querySelector(`.incheck${x} input[type="checkbox"]`);
                   if(divout.checked ){
                     const valid = quiz.fanontaniana[m].reponses[x].isGood;
+                    console.log(quiz.fanontaniana[m].reponses[x].text);
                     console.log(valid);
                     if(valid === true){
                         score +=1;
@@ -96,6 +95,8 @@ $(document).ready(function(){
 
                     }else{
                         m += 1;
+                        score += 0;
+                        console.log(score);
                         console.log(m);
                     
                     };
@@ -127,6 +128,8 @@ box1.style.display = "block";
             const box2 = document.querySelector(".out2");
             box1.style.display = "none";
             box2.style.display = "block";
+
+            
 
 
             btn.addEventListener("click",()=>{
