@@ -82,7 +82,9 @@ $(document).ready(function(){
             
                 for (let x = 0; x < quiz.fanontaniana[m].reponses.length ; x++) {
                   const divout = document.querySelector(`.incheck${x} input[type="checkbox"]`);
-                  if(divout.checked ){
+                  if(divout.checked === true ){
+                  //  divout.removeAttribute('checked');
+                    
                     const valid = quiz.fanontaniana[m].reponses[x].isGood;
                     console.log(quiz.fanontaniana[m].reponses[x].text);
                     console.log(valid);
@@ -91,6 +93,14 @@ $(document).ready(function(){
                         m +=1;
                         console.log(score);
                         console.log(m);
+                        divout.checked = "";
+                       
+                        console.log(divout.checked);
+
+                        
+                       
+                        
+
 
 
                     }else{
@@ -98,6 +108,10 @@ $(document).ready(function(){
                         score += 0;
                         console.log(score);
                         console.log(m);
+                        divout.checked = "";
+                        console.log(divout.checked);
+
+
                     
                     };
 
@@ -124,6 +138,13 @@ box1.style.display = "block";
 
 
         btn.addEventListener("click",()=>{
+            
+           
+            
+
+
+
+
             const box1 = document.querySelector(".out1");
             const box2 = document.querySelector(".out2");
             box1.style.display = "none";
@@ -205,7 +226,7 @@ box1.style.display = "block";
                                                             box13.style.display = "none";
                                                             box14.style.display = "block"; 
 
-                                                            const lien = document.querySelector(`button a`);
+                                                            const lien = document.querySelector(`button[type="button"] a`);
                                                             lien.textContent = "VOIR LE RESULTAT"
 
                                                             btn.addEventListener("click",()=>{
@@ -216,6 +237,8 @@ box1.style.display = "block";
     
                                                                 const btn1 = document.querySelector('button[type="button"]');
                                                                 btn1.style.visibility = "hidden";
+
+                                                            
 
                                                                 
 
