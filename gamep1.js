@@ -76,8 +76,13 @@ $(document).ready(function(){
             
         };
         
-        const btn = document.querySelector('button[type="button"]');
+        const btn = document.querySelector('button[type="submit"]');
         btn.addEventListener("click",()=>{
+            for(let c = 1 ; c < 16 ; c++){
+            const form = document.querySelector(`#f${c}`);
+            form.setAttribute('id',`f${c}`);
+            btn.setAttribute('form',`f${c}`);
+            };
            
             
                 for (let x = 0; x < quiz.fanontaniana[m].reponses.length ; x++) {
@@ -95,7 +100,7 @@ $(document).ready(function(){
                         m +=1;
                         console.log(score);
                         console.log(m);
-                        divout.checked = "";
+                        //divout.checked = "";
                     
                        
                         console.log(divout.checked);
@@ -111,7 +116,7 @@ $(document).ready(function(){
                         score += 0;
                         console.log(score);
                         console.log(m);
-                        divout.checked = "";
+                        //divout.checked = "";
                         console.log(divout.checked);
 
 
@@ -229,7 +234,7 @@ box1.style.display = "block";
                                                             box13.style.display = "none";
                                                             box14.style.display = "block"; 
 
-                                                            const lien = document.querySelector(`button[type="button"] a`);
+                                                            const lien = document.querySelector(`button[type="submit"] a`);
                                                             lien.textContent = "VOIR LE RESULTAT"
 
                                                             btn.addEventListener("click",()=>{
@@ -241,7 +246,7 @@ box1.style.display = "block";
                                                                 box14.style.display = "none";
                                                                 box15.style.display = "block"; 
     
-                                                                const btn1 = document.querySelector('button[type="button"]');
+                                                                const btn1 = document.querySelector('button[type="submit"]');
                                                                 btn1.style.visibility = "hidden";
 
                                                             
