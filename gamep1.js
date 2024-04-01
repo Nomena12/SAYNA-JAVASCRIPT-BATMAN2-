@@ -24,6 +24,12 @@
                 
             };
 
+              for(let c = 1 ; c < 16 ; c++){
+            const form = document.querySelector(`#f${c}`);
+            form.setAttribute('id',`f${c}`);
+            btn.setAttribute('form',`f${c}`);
+            };
+
     */
 
     //let n = 6;
@@ -78,19 +84,13 @@ $(document).ready(function(){
         
         const btn = document.querySelector('button[type="submit"]');
         btn.addEventListener("click",()=>{
-            for(let c = 1 ; c < 16 ; c++){
-            const form = document.querySelector(`#f${c}`);
-            form.setAttribute('id',`f${c}`);
-            btn.setAttribute('form',`f${c}`);
-            };
-           
+            
             
                 for (let x = 0; x < quiz.fanontaniana[m].reponses.length ; x++) {
                   const divout = document.querySelector(`.incheck${x} input[type="checkbox"]`);
                   if(divout.checked === true ){
-                  //  divout.removeAttribute('checked');
-                  //const answr = divout.parentElement.textContent;
-                  //console.log(answr);
+                
+            
                     
                     const valid = quiz.fanontaniana[m].reponses[x].isGood;
                     console.log(quiz.fanontaniana[m].reponses[x].text);
