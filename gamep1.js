@@ -79,21 +79,23 @@ $(document).ready(function(){
         const btn = document.querySelector('button[type="button"]');
         btn.addEventListener("click",()=>{
            
-        /*    for(let y = 0 ; y < 15 ; y++){
-                for (let x = 0; x < quiz.fanontaniana[y].reponses.length ; x++) {
+            
+                for (let x = 0; x < quiz.fanontaniana[m].reponses.length ; x++) {
                   const divout = document.querySelector(`.incheck${x} input[type="checkbox"]`);
                   if(divout.checked === true ){
                   //  divout.removeAttribute('checked');
+                  //const answr = divout.parentElement.textContent;
+                  //console.log(answr);
                     
-                    const valid = quiz.fanontaniana[y].reponses[x].isGood;
-                    console.log(quiz.fanontaniana[y].reponses[x].text);
-                    console.log(valid);
+                    const valid = quiz.fanontaniana[m].reponses[x].isGood;
+                    console.log(quiz.fanontaniana[m].reponses[x].text);
+                    
                     if(valid === true){
                         score +=1;
-                       // m +=1;
+                        m +=1;
                         console.log(score);
-                      //  console.log(m);
-                       // divout.checked = "";
+                        console.log(m);
+                        divout.checked = "";
                     
                        
                         console.log(divout.checked);
@@ -105,10 +107,10 @@ $(document).ready(function(){
 
 
                     }else{
-                       // m += 1;
+                        m += 1;
                         score += 0;
                         console.log(score);
-                        //console.log(m);
+                        console.log(m);
                         divout.checked = "";
                         console.log(divout.checked);
 
@@ -122,10 +124,10 @@ $(document).ready(function(){
                     
                 };
                 
-            };
-
             
-*/
+               
+            
+
             
             
        
@@ -232,50 +234,7 @@ box1.style.display = "block";
 
                                                             btn.addEventListener("click",()=>{
 
-                                                                for(let y = 0 ; y < 15 ; y++){
-                                                                    for (let x = 0; x < quiz.fanontaniana[y].reponses.length ; x++) {
-                                                                      const divout = document.querySelector(`.incheck${x} input[type="checkbox"]`);
-                                                                      if(divout.checked === true ){
-                                                                      //  divout.removeAttribute('checked');
-                                                                        
-                                                                        const valid = quiz.fanontaniana[y].reponses[x].isGood;
-                                                                        console.log(quiz.fanontaniana[y].reponses[x].text);
-                                                                        console.log(valid);
-                                                                        if(valid === true){
-                                                                            score +=1;
-                                                                           // m +=1;
-                                                                            console.log(score);
-                                                                          //  console.log(m);
-                                                                            
-                                                                        
-                                                                           
-                                                                            console.log(divout.checked);
-                                                    
-                                                                            
-                                                                           
-                                                                            
-                                                    
-                                                    
-                                                    
-                                                                        }else{
-                                                                           // m += 1;
-                                                                            score += 0;
-                                                                            console.log(score);
-                                                                            //console.log(m);
-                                                                            
-                                                                            console.log(divout.checked);
-                                                    
-                                                    
-                                                                        
-                                                                        };
-                                                    
-                                                                      };
-                                                                      
-                                                                      
-                                                                        
-                                                                    };
-                                                                    
-                                                                };
+                                                              
                                                     
                                                                 const box14 = document.querySelector(".out14");
                                                                 const box15 = document.querySelector(".modal");
