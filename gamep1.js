@@ -83,7 +83,8 @@ $(document).ready(function(){
         };
         
         const btn = document.querySelector('button[type="submit"]');
-        btn.addEventListener("click",()=>{
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault();
             
             
                 for (let x = 0; x < quiz.fanontaniana[m].reponses.length ; x++) {
@@ -347,9 +348,10 @@ let n = 1 ;
 let totQuest = 15;
 let score = 0;
 let total = `${score}/15`;
-        
-       /*     const btn = document.querySelector("button");
-            btn.addEventListener("click",()=>{
+        /*
+            const btn = document.querySelector('button[type="submit"]');
+            btn.addEventListener("click",(e)=>{
+                e.preventDefault();
 
                 
 
@@ -492,6 +494,6 @@ n += 1
 
     
     
-        }); */
+        }); 
 
-console.log(total);
+console.log(total); */
